@@ -6,9 +6,9 @@ I have provided solutions for each day's challenge in three different languages:
 
 Inside each day's directory, you will find the following folders:
 
-c (C solution)
-python (Python solution)
-rust (Rust solution)
+- c (C solution)
+- python (Python solution)
+- rust (Rust solution)
 
 
 # Note on Comments
