@@ -6,7 +6,7 @@ win = 6
 score = 0
 
 if len(sys.argv) != 2:
-    print("Invalid number of arguments. \n Usage: python main.py [1/2]")
+    print("Invalid number of arguments. \n Usage: python main.py <1|2>")
     exit()
 elif sys.argv[1] == "1":
 
