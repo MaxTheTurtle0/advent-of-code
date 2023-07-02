@@ -43,6 +43,10 @@ int main(int argc,char *argv[]) {
     }
 
     if (strcmp(argv[1], "1") == 0) {
+        // Part 1
+        // Read the file line by line
+        // Find the common character between the two halves
+        // Calculate the priority of the character
         while (fgets(line, sizeof(line), f)) {
             int length = strlen(line);
 
@@ -63,10 +67,13 @@ int main(int argc,char *argv[]) {
             }
 
             sum_item_priorities += priority;
+            free(left_compartment);
+            free(right_compartment);
         }
         printf("Sum of item priorities: %i\n", sum_item_priorities);
         fclose(f);
     } else if (strcmp(argv[1], "2") == 0) {
+        // Part 2
         printf("Part 2 is not implemented yet\n");
         fclose(f);
     } else {

@@ -23,6 +23,7 @@ fn main() {
     if args.len() != 3 {
         panic!("Usage: ./day03 <1|2> <input file>");
     } else if args[1] == "1" {
+        // Part 1
         let mut left_compartment:&str = "";
         let mut right_compartment:&str = "";
         data
@@ -31,7 +32,7 @@ fn main() {
                 let half_len = line.len() / 2;
                 left_compartment = &line[..half_len];
                 right_compartment = &line[half_len..];
-                let common_char = have_common_char(&left_compartment, &right_compartment);
+                let common_char:char = have_common_char(&left_compartment, &right_compartment);
                 let mut priority:u8 = common_char as u8 - 64;
 
                 if priority < 27 {
@@ -43,6 +44,7 @@ fn main() {
             });
         println!("Sum of item priorities: {}", sum_item_priorities);
     } else if args[1] == "2" {
+        // Part 2
         println!("Part 2");
     } else {
         panic!("Usage: ./day03 <1|2> <input file>");
