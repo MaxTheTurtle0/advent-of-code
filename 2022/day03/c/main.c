@@ -26,6 +26,7 @@ char have_common_char(char *str1, char *str2) {
 
 int main(int argc,char *argv[]) {
 
+    // Check for the correct number of arguments
     if (argc != 3) {
         printf("Usage: ./day03 <1|2> <input file>\n");
         return 1;
@@ -37,6 +38,7 @@ int main(int argc,char *argv[]) {
 
     int sum_item_priorities = 0;
 
+    // Check if the file exists
     if (f == NULL) {
         printf("Failed to open the file.\n");
         return 1;
@@ -74,7 +76,8 @@ int main(int argc,char *argv[]) {
         fclose(f);
     } else if (strcmp(argv[1], "2") == 0) {
         // Part 2
-        printf("Part 2 is not implemented yet\n");
+        // TODO: Implement part 2
+        printf("Part 2 isnt implemented yet\n");
         fclose(f);
     } else {
         printf("Invalid argument \n Usage: ./day03 <1|2> <input file>");

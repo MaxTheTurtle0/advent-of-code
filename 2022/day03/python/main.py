@@ -1,6 +1,7 @@
 import sys
 from string import ascii_letters
 
+# Checking if the user has entered a valid amount of arguments
 if len(sys.argv) != 3:
     print("Usage: python main.py <1|2> <input file>")
     exit()
@@ -15,8 +16,9 @@ data = [line.strip("\n") for line in data]
 # Setting sum of items to default value
 sum_items = 0
 
-# Part 1
+# making sure the user has entered valid arguments
 if sys.argv[1] == "1":
+# Part 1
 
     for rucksacks in data:
         half = len(rucksacks) // 2
@@ -29,8 +31,8 @@ if sys.argv[1] == "1":
                 sum_items += priority + 1
 
     print(f"Sum of item priorities for groups: {sum_items}")
-# Part 2
 elif sys.argv[1] == "2":
+# Part 2
     part2_data = []
     for i in range(0, len(data), 3):
             part2_data.append([data[i], data[i + 1], data[i + 2]])
