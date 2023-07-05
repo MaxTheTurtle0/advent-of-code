@@ -32,7 +32,7 @@ int main(int argc,char *argv[]) {
         return 1;
     }
 
-    FILE *f = fopen("../day03.txt", "r");
+    FILE *f = fopen(argv[2], "r");
 
     char line[100];
 
