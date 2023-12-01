@@ -30,9 +30,9 @@ fn main() {
             elf_calories[elf_index] += line.parse::<i32>().unwrap();
         });
 
-    let mut highest_calories:i32 = 0;
-    let mut second_highest_calories:i32 = 0;
-    let mut third_highest_calories: i32 = 0;
+    let mut highest_calories = 0;
+    let mut second_highest_calories = 0;
+    let mut third_highest_calories = 0;
     
     elf_calories
         .iter()
@@ -42,7 +42,6 @@ fn main() {
         }   else if *calories > third_highest_calories && *calories < second_highest_calories {
             third_highest_calories = *calories;
         });
-
 
     println!("Highest calories: {}", highest_calories);
     println!("Calories of top 3: {}", highest_calories + second_highest_calories + third_highest_calories)
