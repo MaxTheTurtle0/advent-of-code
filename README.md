@@ -12,6 +12,6 @@ Inside each day's directory, you will find the following folders:
 
 
 # Note on Comments
-Please note that the solutions provided for day01 and day02 in this repository do not include comments or explanations, as when I initially developed these solutions, I did not anticipate making them public.
+Please note that the solutions provided do not contain any comments.
 
 If you have any questions or need clarification on any part of the code, please feel free to reach out to me. I would be more than happy to assist you and provide further explanation.
