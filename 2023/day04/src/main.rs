@@ -62,6 +62,7 @@ fn part_one(data: &str) -> u32 {
 }
 
 fn part_two(data: &str) -> u32 {
+    todo!();
 }
 
 fn main() {
